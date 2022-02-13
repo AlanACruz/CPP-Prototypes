@@ -2,5 +2,5 @@
 
 # git clone
 ```
-git clone git@github.com:AlanACruz/C-Sharp-Prototypes.git ~/git/CPP-Prototypes
+git clone git@github.com:AlanACruz/CPP-Prototypes.git ~/git/CPP-Prototypes
 ```
