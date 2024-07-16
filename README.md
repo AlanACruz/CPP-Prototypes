@@ -12,3 +12,14 @@ https://github.com/AlanACruz/DevSecOps/blob/master/docker/Install-Docker-On-Chro
 ```
 docker pull conanio/gcc11
 ```
+
+# Run Container
+```
+docker run
+    -v ~/.nuget:/root/.nuget/
+    -v ~/git/CPP-Prototypes:/home/conan/git/CPP-Prototypes
+    -t
+    -i
+    --rm
+    conanio/gcc11
+```
