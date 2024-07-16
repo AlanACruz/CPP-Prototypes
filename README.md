@@ -14,6 +14,8 @@ docker pull conanio/gcc11
 ```
 
 # Run Container
+## TODO Upgrade to Conan 2
+## https://docs.conan.io/2/examples/runners/docker/basic.html
 ```
 docker run
     -v ~/.nuget:/root/.nuget/
