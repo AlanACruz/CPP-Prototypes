@@ -18,7 +18,7 @@ docker pull conanio/gcc11
 ## https://docs.conan.io/2/examples/runners/docker/basic.html
 ```
 docker run
-    -v ~/.nuget:/root/.nuget/
+    -v ~/.conan2:/root/.conan2/
     -v ~/git/CPP-Prototypes:/home/conan/git/CPP-Prototypes
     -t
     -i
