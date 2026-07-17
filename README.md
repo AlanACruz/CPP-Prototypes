@@ -23,5 +23,5 @@ docker run
     -t
     -i
     --rm
-    conanio/gcc11
+    conanio/gcc15
 ```
