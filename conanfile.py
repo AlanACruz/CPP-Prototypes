@@ -1,7 +1,5 @@
 from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout
-# from conan.tools.cmake import CMake, cmake_layout
-
 
 class TestMd5Conan(ConanFile):
     name = "TestMd5"
@@ -19,11 +17,21 @@ class TestMd5Conan(ConanFile):
 
     def requirements(self):
         # self.requires("gcc/15.2.0")
-        self.requires("poco/1.15.2")
-        self.requires("gtest/1.17.0")
 
+        self.requires("poco/1.15.2")      
+        # self.requires("pcre2/10.44")
+        # self.requires("utf8proc/2.9.0")
+        # self.requires("expat/2.8.1")
+        # self.requires("sqlite/3.53.1")
+        # self.requires("libpq/17.7")
+        # self.requires("libmysqlclient/8.1.0")
+        # self.requires("openssl/3.6.2")
+        # self.requires("zlib/1.3.2")
+
+        self.requires("gtest/1.17.0")
+        
     def build_requirements(self):
-        self.tool_requires("cmake/4.2.3")
+        self.tool_requires("cmake/4.3.2")
 
     # def config_options(self):
     #     if self.settings.os == "Windows":
@@ -36,14 +44,14 @@ class TestMd5Conan(ConanFile):
         tc = CMakeToolchain(self)
         tc.generate()
 
-    def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
+    # def build(self):
+    #     cmake = CMake(self)
+    #     cmake.configure()
+    #     cmake.build()
 
-    def package(self):
-        cmake = CMake(self)
-        cmake.install()
+    # def package(self):
+    #     cmake = CMake(self)
+    #     cmake.install()
 
-    def package_info(self):
-        self.cpp_info.libs = ["hello"]
+    # def package_info(self):
+    #     self.cpp_info.libs = ["hello"]
